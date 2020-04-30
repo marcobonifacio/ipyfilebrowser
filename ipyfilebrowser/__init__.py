@@ -1,3 +1,3 @@
-import os
-import ipywidgets as widgets
-import traitlets
+from .filebrowser import FileBrowser
+
+__version__ = '0.1.0'

@@ -1,3 +1,7 @@
+import os
+import ipywidgets as widgets
+import traitlets
+
 class FileBrowser(widgets.VBox):    
     def __init__(self, path=os.getcwd(), ext=''):
         super(FileBrowser, self).__init__()
