@@ -11,7 +11,7 @@ class FileBrowser(widgets.VBox):
         self._update_files(self.path)
         self._update()
 
-    @traitlets.observe('path')
+    @traitlets.observe('path', 'ext')
     def _update_files(self, change):
         self.files = list()
         self.dirs = list()
@@ -26,6 +26,7 @@ class FileBrowser(widgets.VBox):
                     else:
                         if os.path.splitext(os.path.basename(f))[1] == self.ext:
                             self.files.append(f)
+        self._update()
 
     @traitlets.validate('path')
     def _validate_path(self, proposal):

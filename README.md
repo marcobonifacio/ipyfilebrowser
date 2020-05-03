@@ -1,5 +1,5 @@
 # ipyfilebrowser
-A file browser widget for Jupyter with `traitlets.traits`.
+A file browser widget for Jupyter / Jupyterlab based on `ipywidgets.VBox`. It continously updates the path and filters files by extensions.
 
 ## Release notes
 
