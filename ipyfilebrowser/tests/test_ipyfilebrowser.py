@@ -1,5 +1,5 @@
 import os
-from ..filebrowser import FileBrowser
+import ipyfilebrowser
 
 def test_filebrowser():
-    pass
+    fb = ipyfilebrowser.FileBrowser()
