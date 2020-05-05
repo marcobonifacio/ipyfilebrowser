@@ -7,7 +7,8 @@ package:
 
 source:
     url: "https://github.com/mbonix/{{ name }}/archive/{{ version }}.tar.gz"
-    sha256: edc99d714a93cdbbdee69e59de9bdc5578d9ab74e63b36164ed976a029f17b2e
+    sha256: 4a5940e66c1fc5f44f3dbda5caf5fd8100bf79933c8ba2075b1ad7d74ae9473d
+
 
 build:
     noarch: python

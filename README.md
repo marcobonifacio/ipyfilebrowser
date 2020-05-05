@@ -3,9 +3,6 @@ A file browser widget for Jupyter / Jupyterlab based on `ipywidgets.VBox`. It co
 
 ![Python package](https://github.com/mbonix/ipyfilebrowser/workflows/Python%20package/badge.svg)
 
-## Release notes
+## Usage
 
-### 0.1.0
-
-- First public release.
-
+See the notebook.

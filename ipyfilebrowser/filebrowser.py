@@ -4,6 +4,8 @@ import traitlets
 
 
 class FileBrowser(widgets.VBox):
+    """FileBrowser class."""
+
     def __init__(self, path=os.getcwd(), ext=''):
         super(FileBrowser, self).__init__()
         self.add_traits(path=traitlets.Unicode(path))
