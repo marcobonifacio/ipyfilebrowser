@@ -1,0 +1,37 @@
+{% set name = "ipyfilebrowser" %}
+{% set version = "0.1.2" %}
+
+package:
+    name: "{{ name|lower }}"
+    version: "{{ version }}"
+
+source:
+    url: "https://github.com/mbonix/{{ name }}/archive/{{ version }}.tar.gz"
+    sha256: edc99d714a93cdbbdee69e59de9bdc5578d9ab74e63b36164ed976a029f17b2e
+
+build:
+    noarch: python
+    number: 0
+    script: "{{ PYTHON }} -m pip install . -vv"
+
+requirements:
+    host:
+        - pip
+        - python
+    run:
+        - ipywidgets
+        - python
+
+test:
+    imports:
+        - ipyfilebrowser
+
+about:
+    home: https://github.com/mbonix/blpd
+    license: MIT
+    license_file: LICENSE
+    summary: "A file browser widget for Jupyter / Jupyterlab based on ipywidgets.VBox"
+
+extra:
+    maintainers:
+        - mbonix

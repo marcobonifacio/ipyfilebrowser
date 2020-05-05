@@ -1,1 +1,3 @@
-__version__ = '0.1.0'
+from .filebrowser import FileBrowser
+
+__version__ = '0.1.2'
